@@ -1,0 +1,36 @@
+{
+  "users": {
+    "1": {
+      "name": "Владимир",
+      "surname": "Ленин",
+      "login": "mylogin",
+      "password": "mypassword",
+      "friends": [
+        {
+          "name": "Николай",
+          "surname": "Иванович"
+        },
+        {
+          "name": "Владимир",
+          "surname": "Давидович"
+        },
+        {
+          "name": "Лев",
+          "surname": "Толстой"
+        },
+        {
+          "name": "Александр",
+          "surname": "Пушкин"
+        },
+        {
+          "name": "Иосиф",
+          "surname": "Сталин"
+        },
+        {
+          "name": "Иван",
+          "surname": "Васильевич"
+        }
+      ]
+    }
+  }
+}

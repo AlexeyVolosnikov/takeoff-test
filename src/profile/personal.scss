@@ -1,0 +1,43 @@
+@import "./../index.css";
+
+/* Цвет фона экрана */
+$bg : #181822;
+
+.friends-wrapper {
+  width:300px;
+  height: 100vh;
+  background: lighten($bg, 10%);
+}
+
+.profile-svg-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100px;
+  height:100px;
+  margin-top: 40px;
+}
+.personal-info {
+  margin-top: 20px;
+  font-size: 24px;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+}
+.exit {
+  margin-bottom: 20px;
+  border-radius: 7px;
+  background:transparent;
+  border:2px solid lighten($bg, 50%);
+  padding:10px 40px 10px 40px;
+  transition: 0.25s;
+  color:white;
+  font-size: 18px;
+}
+.exit:hover {
+  background: lighten($bg, 60%);
+  box-shadow: 0 0 10px lighten($bg, 60%);
+  cursor: pointer;
+  color:black;
+}
+.personal-svg {
+  filter: invert(100%) sepia(40%) saturate(800%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}

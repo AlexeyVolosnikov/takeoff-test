@@ -1,0 +1,129 @@
+@import "./../index.css";
+
+body {
+  overflow: hidden;
+}
+
+/* Цвет фона экрана */
+$bg : #181822;
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Центральный блок авторизации */
+.auth-wrapper {
+
+  width:300px;
+  height:470px;
+  border-radius: 7px;
+  border: 1px solid lighten(#474763, 7%);
+  background: lighten($bg, 10%);
+  box-shadow: 0 0 8px #5e5e8e;
+  transition: 0.25s;
+
+  /* Поля ввода данных */
+  form {
+    padding:17px;
+  }
+  .input-label {
+    color: #a6a6da;
+    font-size:17px;
+    padding: 15px 0 7px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  input[type='text'],
+  input[type='password'] {
+    border:0;
+    border-radius: 7px;
+    outline:none;
+    height:25px;
+    padding: 3px 5px 3px 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  input[type='text'],
+  input[type="password"]{
+    font-size: 16px;
+  }
+  /* Цвет заголовка */
+  .title {
+    text-align: center;
+    p {
+      margin:10px 0 15px 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #aaaecd;
+    }
+  }
+  input[type="submit"] {
+    border:2px solid #67bb81;
+    background:transparent;
+    border-radius: 7px;
+    margin : 20px 0 0 0;
+    color: #b4e2bf;
+    padding:15px 0 15px 0;
+    transition: 0.40s;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    outline:none;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    color:black;
+    background:#67bb81;
+  }
+  input[type="submit"]:disabled {
+    border:2px solid #8a8a8a;
+    color: #8a8a8a;
+  }
+  input[type="submit"]:disabled:hover {
+    cursor: default;
+    background: transparent;
+  }
+  /* Условия конфид. */
+  .terms-wrapper {
+    margin: 18px 0 5px 0;
+    color: #aaaecd;
+    a {
+      text-decoration-line: none;
+      color:#aaaecd;
+    }
+    a:hover {
+      text-decoration-line: underline;
+    }
+    .accept-terms {
+      display: block;
+      margin: -1px 0 0 6px;
+    }
+  }
+
+  /* Забыли пароль? */
+  .forgot-pwd {
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+    margin-top: 30px;
+    color: lighten($bg, 70%);
+  }
+  .forgot-pwd:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px lighten($bg, 70%);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%;
+  }
+  .forgot-pwd:hover:after,
+  .forgot-pwd:focus:after,
+  .forgot-pwd:active:after {
+    transform: scaleX(1);
+    transform-origin:0 50%;
+  }
+
+}
+
+.auth-wrapper:hover {
+  box-shadow: 0 0 15px #5e5e8e;
+}
+

@@ -1,0 +1,127 @@
+@import "./../index.css";
+@import "./../authorization/authorization";
+
+$padding : 15px 60px 15px 20px;
+$monsterrat : "Montserrat", sans-serif;
+$btn-padding:10px 20px 10px 20px;
+
+.friend-wrapper {
+  color:white;
+  font-size:16px;
+  font-family: $monsterrat;
+  padding: $padding;
+  transition:0.25s;
+}
+.friend-wrapper:hover {
+  cursor: pointer;
+  background:lighten($bg, 10%);
+}
+.btns-wrapper {
+  width:50%;
+  display:flex;
+  justify-content: flex-end;
+}
+.friend-cell {
+  width:25%;
+}
+.friend-id {
+  width:10%;
+  color:white;
+}
+.searchbox-wrapper {
+  padding: $padding;
+}
+.searchbox {
+  width:100%;
+  border-radius: 7px;
+  border:0;
+  outline:none;
+  padding: 8px 10px 7px 10px;
+  font-size: 16px;
+  font-family: $monsterrat;
+}
+.borders {
+  border-radius: 7px;
+  border:0;
+}
+.edit {
+  background: #b58024;
+  padding: $btn-padding;
+  margin-right: 20px;
+  transition:0.15s;
+  font-weight: bold;
+  outline:none;
+}
+.delete {
+  background: #d41919;
+  padding: $btn-padding;
+  transition:0.15s;
+  font-weight: bold;
+  outline:none;
+}
+.edit:hover {
+  cursor: pointer;
+  background: #7b6032;
+}
+.delete:hover {
+  cursor: pointer;
+  background: #712020;
+}
+.doedit {
+  background: #71b540;
+  margin-right: 20px;
+  width:68px;
+  font-size:16px;
+}
+.doedit:hover {
+  cursor: pointer;
+  background: darken(#71b540, 10%);
+}
+.noedit {
+  background: #69cbb7;
+  margin-right: 20px;
+  width:68px;
+  font-size:16px;
+  outline:none;
+}
+.noedit:hover {
+  cursor: pointer;
+  background: darken(#69cbb7, 20%);
+}
+.name-surname-add {
+  margin: 10px 0 0 0;
+  padding-left:10px;
+  font-family: $monsterrat;
+  outline: none;
+}
+.name {
+  width:150px;
+  border-radius: 7px;
+  border:0;
+  height:35px;
+}
+.surname {
+  width:200px;
+  margin-left: 20px;
+  border-radius: 7px;
+  border:0;
+  height:35px;
+}
+.add-friend {
+  outline:none;
+  background: #5fd65f;
+  padding:10px 20px 10px 20px;
+  border-radius: 7px;
+  border:0;
+  margin-top: 10px;
+  transition: 0.25s;
+  color:darken(#5fd65f, 90%);
+  font-weight:bold;
+  font-family: $monsterrat;
+  margin-left:20px;
+}
+.add-friend:hover {
+  color:white;
+  cursor: pointer;
+  background:darken(#5fd65f, 25%);
+}
